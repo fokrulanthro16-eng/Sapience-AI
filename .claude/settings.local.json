@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\WALTON\\\\Desktop\\\\Sapience-AI\" | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "Bash(flutter pub *)",
+      "Bash(flutter analyze *)",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\Users\\\\WALTON\\\\Desktop\\\\Sapience-AI\\\\flutter_app\\\\lib\" -Filter \"*.dart\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(python -c ' *)",
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/python -m pip install -q fastapi pydantic pydantic-settings python-dotenv supabase email-validator)",
+      "PowerShell(py --list 2>&1)",
+      "PowerShell(py -3.11 -m pip install --user fastapi pydantic pydantic-settings supabase uvicorn 2>&1)",
+      "PowerShell(py -3.11 -m pip install fastapi pydantic pydantic-settings supabase \"uvicorn[standard]\" email-validator python-dotenv 2>&1)"
+    ]
+  }
+}

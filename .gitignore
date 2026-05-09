@@ -1,0 +1,54 @@
+# Environment secrets — NEVER commit these
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local databases — contain sensitive health data
+*.db
+*.sqlite
+*.sqlite3
+
+# GGUF model files — large binary files, download separately
+models/
+*.gguf
+
+# Raw audio and logs — sensitive, never commit
+audio_logs/
+raw_logs/
+*.wav
+*.mp3
+*.ogg
+*.m4a
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Flutter build output (when Flutter app is added)
+flutter_app/.dart_tool/
+flutter_app/build/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
